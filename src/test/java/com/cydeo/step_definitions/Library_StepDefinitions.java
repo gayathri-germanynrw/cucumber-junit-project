@@ -35,6 +35,16 @@ public class Library_StepDefinitions {
     public void userEntersStudentPassword() {
         System.out.println("user entered Student password");
     }
+
+
+    @When("user enters Admin username")
+    public void user_enters_admin_username() {
+        System.out.println("User entered with Admin username");
+    }
+    @When("user enters Admin password")
+    public void user_enters_admin_password() {
+        System.out.println("User entered with Admin Password");
+    }
 }
 
 /*

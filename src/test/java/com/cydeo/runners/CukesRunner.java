@@ -6,8 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = "html:target/cucumber-reports.html",
         features="src/test/resources/features",
-        glue="com/cydeo/step_definitions"
+        glue="com/cydeo/step_definitions",
+        dryRun = false,
+       // tags="@smoke and @librarian"
+       // tags="@smoke and not @librarian"
+        tags="@regression and not @librarian",
+        publish=true
 
 
 
