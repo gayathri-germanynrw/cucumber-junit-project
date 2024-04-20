@@ -12,8 +12,10 @@ import org.junit.runner.RunWith;
         dryRun = false,
        // tags="@smoke and @librarian"
        // tags="@smoke and not @librarian"
-        tags="@regression and not @librarian",
-        publish=true
+       // tags="@regression and not @librarian",
+       // tags="@regression",
+       tags="@wip",
+        publish=true // Generating a report with public link
 
 
 
