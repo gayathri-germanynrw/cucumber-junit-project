@@ -14,7 +14,12 @@ import org.junit.runner.RunWith;
        // tags="@smoke and not @librarian"
        // tags="@regression and not @librarian",
        // tags="@regression",
-       tags="@wip",
+       //tags="@driver",
+        //tags="@driver and @salesmanager",
+       // tags="", //run all features
+        // tags="@param",
+        //tags="@invalidLoginWithParamsSceOutLine",
+        tags="@EtsySearchVerification",
         publish=true // Generating a report with public link
 
 
@@ -22,3 +27,4 @@ import org.junit.runner.RunWith;
 )
 public class CukesRunner {
 }
+

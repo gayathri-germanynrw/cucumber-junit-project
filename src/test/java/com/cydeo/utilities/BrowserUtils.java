@@ -52,6 +52,8 @@ public class BrowserUtils {
     }
 
     public static void verifyTitleContains(String expectedInTitle){
+        System.out.println("expectedInTitle--->"+expectedInTitle);
+        System.out.println("Driver.getDriver().getTitle() --->"+Driver.getDriver().getTitle());
         Assert.assertTrue(Driver.getDriver().getTitle().contains(expectedInTitle));
     }
 

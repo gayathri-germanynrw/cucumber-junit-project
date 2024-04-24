@@ -17,7 +17,7 @@ public class Hooks {
      // Hooks will allow us to create PRE and POST conditions for ALL of scenarios in our project.
     //Hooks class is separated from the feature file.
 
-    @Before(order=1)
+    @Before(value="@db" , order=1)
     public void setupMethod(){
         System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
     }
@@ -34,7 +34,7 @@ public class Hooks {
         byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         scenario.attach(screenshot,"image/png",scenario.getName());
         System.out.println("----> @After: RUNNING AFTER SCENARIO");
-        //Driver.closeDriver(); // Instead of using only message and extra functionality
+       // Driver.closeDriver(); // Instead of using only message and extra functionality
     }
 
     @BeforeStep
